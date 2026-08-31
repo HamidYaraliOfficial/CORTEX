@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <data name="Shell_OpenRepository.Label" xml:space="preserve"><value>打开仓库</value></data>
+  <data name="Shell_CommandPalette.Label" xml:space="preserve"><value>命令面板</value></data>
+  <data name="Shell_Impact.Label" xml:space="preserve"><value>影响分析</value></data>
+  <data name="Shell_Reports.Label" xml:space="preserve"><value>报告</value></data>
+  <data name="Shell_Settings.Label" xml:space="preserve"><value>设置</value></data>
+  <data name="Shell_Notifications.Label" xml:space="preserve"><value>通知</value></data>
+  <data name="Shell_TabCode.Header" xml:space="preserve"><value>代码</value></data>
+  <data name="Shell_TabTimeline.Header" xml:space="preserve"><value>时间线</value></data>
+  <data name="Shell_TabImpact.Header" xml:space="preserve"><value>影响</value></data>
+  <data name="Shell_TabConsole.Header" xml:space="preserve"><value>控制台</value></data>
+  <data name="RepoExplorer_SearchBox.PlaceholderText" xml:space="preserve"><value>搜索仓库...</value></data>
+  <data name="RepoExplorer_AddRepository.Content" xml:space="preserve"><value>添加仓库</value></data>
+  <data name="RepoExplorer_NewWorkspace.Content" xml:space="preserve"><value>新建工作区</value></data>
+  <data name="Canvas_ZoomIn.Content" xml:space="preserve"><value>放大</value></data>
+  <data name="Canvas_ZoomOut.Content" xml:space="preserve"><value>缩小</value></data>
+  <data name="Canvas_FitToScreen.Content" xml:space="preserve"><value>适应屏幕</value></data>
+  <data name="Canvas_FocusMode.Content" xml:space="preserve"><value>聚焦模式</value></data>
+  <data name="Canvas_EdgeFilter_All.Content" xml:space="preserve"><value>所有关系</value></data>
+  <data name="Canvas_EdgeFilter_DependsOnly.Content" xml:space="preserve"><value>仅依赖关系</value></data>
+  <data name="Canvas_EdgeFilter_CallsOnly.Content" xml:space="preserve"><value>仅调用关系</value></data>
+  <data name="Canvas_EdgeFilter_InheritanceOnly.Content" xml:space="preserve"><value>仅继承关系</value></data>
+  <data name="Inspector_Title.Text" xml:space="preserve"><value>检查器</value></data>
+  <data name="Inspector_Metrics.Header" xml:space="preserve"><value>指标</value></data>
+  <data name="Inspector_Consumers.Header" xml:space="preserve"><value>使用方</value></data>
+  <data name="Inspector_Tests.Header" xml:space="preserve"><value>覆盖测试</value></data>
+  <data name="Impact_Title.Text" xml:space="preserve"><value>变更影响</value></data>
+  <data name="Impact_Direct.Text" xml:space="preserve"><value>直接影响</value></data>
+  <data name="Impact_Indirect.Text" xml:space="preserve"><value>间接影响</value></data>
+  <data name="Impact_Tests.Text" xml:space="preserve"><value>受影响的测试</value></data>
+  <data name="CommandPalette_Placeholder.PlaceholderText" xml:space="preserve"><value>搜索仓库、符号、提交、规则...</value></data>
+  <data name="Settings_Appearance.Text" xml:space="preserve"><value>外观</value></data>
+  <data name="Settings_Theme.Text" xml:space="preserve"><value>主题</value></data>
+  <data name="Settings_Theme_WindowsDefault.Content" xml:space="preserve"><value>Windows 默认</value></data>
+  <data name="Settings_Theme_Light.Content" xml:space="preserve"><value>浅色</value></data>
+  <data name="Settings_Theme_Dark.Content" xml:space="preserve"><value>深色</value></data>
+  <data name="Settings_Theme_Red.Content" xml:space="preserve"><value>红色主题</value></data>
+  <data name="Settings_Theme_Blue.Content" xml:space="preserve"><value>蓝色主题</value></data>
+  <data name="Settings_Language.Text" xml:space="preserve"><value>语言</value></data>
+  <data name="Settings_LanguageRestartNote.Title" xml:space="preserve"><value>需要重新启动</value></data>
+  <data name="Settings_AI.Text" xml:space="preserve"><value>AI 助手</value></data>
+  <data name="Settings_EnableCloudAi.Header" xml:space="preserve"><value>启用云端 AI（仅在开启时数据才会离开本机）</value></data>
+  <data name="Settings_CloudApiKey.Header" xml:space="preserve"><value>云端 AI API 密钥</value></data>
+  <data name="Settings_SaveApiKey.Content" xml:space="preserve"><value>安全保存密钥</value></data>
+  <data name="Settings_Schedule.Text" xml:space="preserve"><value>计划索引（工作时间）</value></data>
+  <data name="Settings_ScheduleEnabled.Header" xml:space="preserve"><value>启用后台定时索引</value></data>
+  <data name="Settings_WindowStart.Text" xml:space="preserve"><value>窗口开始时间</value></data>
+  <data name="Settings_WindowEnd.Text" xml:space="preserve"><value>窗口结束时间</value></data>
+  <data name="Settings_IntervalMinutes.Text" xml:space="preserve"><value>间隔（分钟）</value></data>
+  <data name="Settings_ActiveDays.Text" xml:space="preserve"><value>启用的星期</value></data>
+  <data name="Settings_Day_Mon.Content" xml:space="preserve"><value>周一</value></data>
+  <data name="Settings_Day_Tue.Content" xml:space="preserve"><value>周二</value></data>
+  <data name="Settings_Day_Wed.Content" xml:space="preserve"><value>周三</value></data>
+  <data name="Settings_Day_Thu.Content" xml:space="preserve"><value>周四</value></data>
+  <data name="Settings_Day_Fri.Content" xml:space="preserve"><value>周五</value></data>
+  <data name="Settings_Day_Sat.Content" xml:space="preserve"><value>周六</value></data>
+  <data name="Settings_Day_Sun.Content" xml:space="preserve"><value>周日</value></data>
+</root>

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Cortex.Rules</RootNamespace>
+    <AssemblyName>Cortex.Rules</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cortex.Core\Cortex.Core.csproj" />
+    <ProjectReference Include="..\Cortex.Graph\Cortex.Graph.csproj" />
+  </ItemGroup>
+</Project>

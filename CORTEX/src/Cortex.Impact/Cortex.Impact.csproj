@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Cortex.Impact</RootNamespace>
+    <AssemblyName>Cortex.Impact</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cortex.Core\Cortex.Core.csproj" />
+    <ProjectReference Include="..\Cortex.Graph\Cortex.Graph.csproj" />
+    <ProjectReference Include="..\Cortex.Git\Cortex.Git.csproj" />
+  </ItemGroup>
+</Project>

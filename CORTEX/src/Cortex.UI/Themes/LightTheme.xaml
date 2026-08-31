@@ -1,0 +1,9 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Forced Light theme, independent of the OS setting — selected explicitly in Settings. -->
+    <SolidColorBrush x:Key="CortexCanvasBackgroundBrush" Color="#FFFAFAFA"/>
+    <SolidColorBrush x:Key="CortexNodeFillBrush" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="CortexEdgeStrokeBrush" Color="#FF9A9A9A"/>
+    <SolidColorBrush x:Key="CortexTextPrimaryBrush" Color="#FF1A1A1A"/>
+</ResourceDictionary>

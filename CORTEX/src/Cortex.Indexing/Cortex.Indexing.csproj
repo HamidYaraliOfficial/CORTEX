@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Cortex.Indexing</RootNamespace>
+    <AssemblyName>Cortex.Indexing</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cortex.Core\Cortex.Core.csproj" />
+    <ProjectReference Include="..\Cortex.Graph\Cortex.Graph.csproj" />
+    <ProjectReference Include="..\Cortex.Roslyn\Cortex.Roslyn.csproj" />
+    <ProjectReference Include="..\Cortex.Search\Cortex.Search.csproj" />
+  </ItemGroup>
+</Project>

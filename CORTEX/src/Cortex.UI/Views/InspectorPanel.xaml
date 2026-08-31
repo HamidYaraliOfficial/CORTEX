@@ -1,0 +1,25 @@
+<Page
+    x:Class="Cortex.UI.Views.InspectorPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer Padding="12">
+        <StackPanel Spacing="8">
+            <TextBlock x:Uid="Inspector_Title" Style="{StaticResource SubtitleTextBlockStyle}"/>
+            <TextBlock x:Name="SymbolNameText" FontWeight="SemiBold" TextWrapping="Wrap"/>
+            <TextBlock x:Name="SymbolKindText" Opacity="0.7"/>
+            <TextBlock x:Name="SymbolLocationText" Opacity="0.7" TextWrapping="Wrap"/>
+
+            <Expander x:Uid="Inspector_Metrics" IsExpanded="True" HorizontalAlignment="Stretch">
+                <StackPanel x:Name="MetricsPanel" Spacing="4"/>
+            </Expander>
+
+            <Expander x:Uid="Inspector_Consumers" IsExpanded="True" HorizontalAlignment="Stretch">
+                <ListView x:Name="ConsumersList" SelectionMode="None"/>
+            </Expander>
+
+            <Expander x:Uid="Inspector_Tests" HorizontalAlignment="Stretch">
+                <ListView x:Name="TestsList" SelectionMode="None"/>
+            </Expander>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

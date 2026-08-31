@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <data name="Shell_OpenRepository.Label" xml:space="preserve"><value>Open Repository</value></data>
+  <data name="Shell_CommandPalette.Label" xml:space="preserve"><value>Command Palette</value></data>
+  <data name="Shell_Impact.Label" xml:space="preserve"><value>Impact Analysis</value></data>
+  <data name="Shell_Reports.Label" xml:space="preserve"><value>Reports</value></data>
+  <data name="Shell_Settings.Label" xml:space="preserve"><value>Settings</value></data>
+  <data name="Shell_Notifications.Label" xml:space="preserve"><value>Notifications</value></data>
+  <data name="Shell_TabCode.Header" xml:space="preserve"><value>Code</value></data>
+  <data name="Shell_TabTimeline.Header" xml:space="preserve"><value>Timeline</value></data>
+  <data name="Shell_TabImpact.Header" xml:space="preserve"><value>Impact</value></data>
+  <data name="Shell_TabConsole.Header" xml:space="preserve"><value>Console</value></data>
+  <data name="RepoExplorer_SearchBox.PlaceholderText" xml:space="preserve"><value>Search repository...</value></data>
+  <data name="RepoExplorer_AddRepository.Content" xml:space="preserve"><value>Add Repository</value></data>
+  <data name="RepoExplorer_NewWorkspace.Content" xml:space="preserve"><value>New Workspace</value></data>
+  <data name="Canvas_ZoomIn.Content" xml:space="preserve"><value>Zoom In</value></data>
+  <data name="Canvas_ZoomOut.Content" xml:space="preserve"><value>Zoom Out</value></data>
+  <data name="Canvas_FitToScreen.Content" xml:space="preserve"><value>Fit to Screen</value></data>
+  <data name="Canvas_FocusMode.Content" xml:space="preserve"><value>Focus Mode</value></data>
+  <data name="Canvas_EdgeFilter_All.Content" xml:space="preserve"><value>All Relationships</value></data>
+  <data name="Canvas_EdgeFilter_DependsOnly.Content" xml:space="preserve"><value>Dependencies Only</value></data>
+  <data name="Canvas_EdgeFilter_CallsOnly.Content" xml:space="preserve"><value>Calls Only</value></data>
+  <data name="Canvas_EdgeFilter_InheritanceOnly.Content" xml:space="preserve"><value>Inheritance Only</value></data>
+  <data name="Inspector_Title.Text" xml:space="preserve"><value>Inspector</value></data>
+  <data name="Inspector_Metrics.Header" xml:space="preserve"><value>Metrics</value></data>
+  <data name="Inspector_Consumers.Header" xml:space="preserve"><value>Consumers</value></data>
+  <data name="Inspector_Tests.Header" xml:space="preserve"><value>Covering Tests</value></data>
+  <data name="Impact_Title.Text" xml:space="preserve"><value>Change Impact</value></data>
+  <data name="Impact_Direct.Text" xml:space="preserve"><value>Directly Impacted</value></data>
+  <data name="Impact_Indirect.Text" xml:space="preserve"><value>Indirectly Impacted</value></data>
+  <data name="Impact_Tests.Text" xml:space="preserve"><value>Affected Tests</value></data>
+  <data name="CommandPalette_Placeholder.PlaceholderText" xml:space="preserve"><value>Search repositories, symbols, commits, rules...</value></data>
+  <data name="Settings_Appearance.Text" xml:space="preserve"><value>Appearance</value></data>
+  <data name="Settings_Theme.Text" xml:space="preserve"><value>Theme</value></data>
+  <data name="Settings_Theme_WindowsDefault.Content" xml:space="preserve"><value>Windows Default</value></data>
+  <data name="Settings_Theme_Light.Content" xml:space="preserve"><value>Light</value></data>
+  <data name="Settings_Theme_Dark.Content" xml:space="preserve"><value>Dark</value></data>
+  <data name="Settings_Theme_Red.Content" xml:space="preserve"><value>Red Accent</value></data>
+  <data name="Settings_Theme_Blue.Content" xml:space="preserve"><value>Blue Accent</value></data>
+  <data name="Settings_Language.Text" xml:space="preserve"><value>Language</value></data>
+  <data name="Settings_LanguageRestartNote.Title" xml:space="preserve"><value>Restart required</value></data>
+  <data name="Settings_AI.Text" xml:space="preserve"><value>AI Assistant</value></data>
+  <data name="Settings_EnableCloudAi.Header" xml:space="preserve"><value>Enable Cloud AI (data leaves this device only when this is on)</value></data>
+  <data name="Settings_CloudApiKey.Header" xml:space="preserve"><value>Cloud AI API Key</value></data>
+  <data name="Settings_SaveApiKey.Content" xml:space="preserve"><value>Save Key Securely</value></data>
+  <data name="Settings_Schedule.Text" xml:space="preserve"><value>Scheduled Indexing (Working Hours)</value></data>
+  <data name="Settings_ScheduleEnabled.Header" xml:space="preserve"><value>Enable scheduled background indexing</value></data>
+  <data name="Settings_WindowStart.Text" xml:space="preserve"><value>Window start</value></data>
+  <data name="Settings_WindowEnd.Text" xml:space="preserve"><value>Window end</value></data>
+  <data name="Settings_IntervalMinutes.Text" xml:space="preserve"><value>Interval (minutes)</value></data>
+  <data name="Settings_ActiveDays.Text" xml:space="preserve"><value>Active days</value></data>
+  <data name="Settings_Day_Mon.Content" xml:space="preserve"><value>Mon</value></data>
+  <data name="Settings_Day_Tue.Content" xml:space="preserve"><value>Tue</value></data>
+  <data name="Settings_Day_Wed.Content" xml:space="preserve"><value>Wed</value></data>
+  <data name="Settings_Day_Thu.Content" xml:space="preserve"><value>Thu</value></data>
+  <data name="Settings_Day_Fri.Content" xml:space="preserve"><value>Fri</value></data>
+  <data name="Settings_Day_Sat.Content" xml:space="preserve"><value>Sat</value></data>
+  <data name="Settings_Day_Sun.Content" xml:space="preserve"><value>Sun</value></data>
+</root>

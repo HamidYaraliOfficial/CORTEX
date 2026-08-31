@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Cortex.AI</RootNamespace>
+    <AssemblyName>Cortex.AI</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.20.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cortex.Core\Cortex.Core.csproj" />
+    <ProjectReference Include="..\Cortex.Graph\Cortex.Graph.csproj" />
+    <ProjectReference Include="..\Cortex.Search\Cortex.Search.csproj" />
+    <ProjectReference Include="..\Cortex.Security\Cortex.Security.csproj" />
+  </ItemGroup>
+</Project>

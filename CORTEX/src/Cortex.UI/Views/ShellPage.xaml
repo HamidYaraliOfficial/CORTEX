@@ -1,0 +1,72 @@
+<Page
+    x:Class="Cortex.UI.Views.ShellPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>   <!-- Top command bar -->
+            <RowDefinition Height="*"/>      <!-- Main 3-pane area -->
+            <RowDefinition Height="Auto"/>   <!-- Bottom splitter -->
+            <RowDefinition Height="240"/>    <!-- Bottom panel: Code / Timeline / Console / Impact -->
+        </Grid.RowDefinitions>
+
+        <!-- ===================== Top command bar ===================== -->
+        <CommandBar Grid.Row="0" DefaultLabelPosition="Right"
+                    Background="{ThemeResource CortexCanvasBackgroundBrush}">
+            <AppBarButton x:Uid="Shell_OpenRepository" Icon="OpenFile"/>
+            <AppBarButton x:Uid="Shell_CommandPalette" Icon="Find" Click="OnCommandPaletteRequested"/>
+            <AppBarSeparator/>
+            <AppBarButton x:Uid="Shell_Impact" Icon="Flag"/>
+            <AppBarButton x:Uid="Shell_Reports" Icon="Document"/>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Uid="Shell_Settings" Icon="Setting" Click="OnSettingsRequested"/>
+                <AppBarButton x:Uid="Shell_Notifications" Icon="Message"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+
+        <!-- ===================== Main 3-pane mission-control area ===================== -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="340"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left: Repository Explorer -->
+            <Frame x:Name="RepositoryExplorerFrame" Grid.Column="0"/>
+            <controls:GridSplitter Grid.Column="1" Width="4" ResizeDirection="Columns"/>
+
+            <!-- Center: Architecture / Graph Canvas -->
+            <Frame x:Name="ArchitectureCanvasFrame" Grid.Column="2"/>
+
+            <controls:GridSplitter Grid.Column="3" Width="4" ResizeDirection="Columns"/>
+            <!-- Right: Inspector / Symbol Details -->
+            <Frame x:Name="InspectorFrame" Grid.Column="4"/>
+        </Grid>
+
+        <controls:GridSplitter Grid.Row="2" Height="4" ResizeDirection="Rows" ResizeBehavior="PreviousAndNext"/>
+
+        <!-- ===================== Bottom panel: Code / Timeline / Console / Impact ===================== -->
+        <TabView Grid.Row="3" IsAddTabButtonVisible="False" CanReorderTabs="True" CanDragTabs="True">
+            <TabViewItem x:Uid="Shell_TabCode" IconSource="{x:Null}">
+                <Frame x:Name="SourceViewerFrame"/>
+            </TabViewItem>
+            <TabViewItem x:Uid="Shell_TabTimeline">
+                <Frame x:Name="TimelineFrame"/>
+            </TabViewItem>
+            <TabViewItem x:Uid="Shell_TabImpact">
+                <Frame x:Name="ImpactPanelFrame"/>
+            </TabViewItem>
+            <TabViewItem x:Uid="Shell_TabConsole">
+                <Frame x:Name="JobConsoleFrame"/>
+            </TabViewItem>
+        </TabView>
+
+        <!-- Command Palette overlay (Ctrl+K) -->
+        <Frame x:Name="CommandPaletteHost" Grid.RowSpan="4" Visibility="Collapsed"/>
+    </Grid>
+</Page>

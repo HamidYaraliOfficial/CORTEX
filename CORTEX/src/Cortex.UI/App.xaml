@@ -1,0 +1,14 @@
+<Application
+    x:Class="Cortex.UI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Default light/dark comes from WinUI itself; these four add the
+                     Windows-default, Light, Dark, Red-accent and Blue-accent CORTEX themes. -->
+                <ResourceDictionary Source="Themes/WindowsDefaultTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

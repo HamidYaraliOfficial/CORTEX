@@ -1,0 +1,12 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Custom "Red" CORTEX accent — overrides the system accent for brand-consistent chrome. -->
+    <Color x:Key="CortexAccentColor">#FFC42B1C</Color>
+    <SolidColorBrush x:Key="SystemAccentColor" Color="{StaticResource CortexAccentColor}"/>
+    <SolidColorBrush x:Key="CortexAccentBrush" Color="{StaticResource CortexAccentColor}"/>
+    <SolidColorBrush x:Key="CortexImpactCriticalBrush" Color="#FFB4160B"/>
+    <SolidColorBrush x:Key="CortexCanvasBackgroundBrush" Color="#FF201414"/>
+    <SolidColorBrush x:Key="CortexNodeFillBrush" Color="#FF2E1B1A"/>
+    <SolidColorBrush x:Key="CortexEdgeStrokeBrush" Color="#FFB56A63"/>
+</ResourceDictionary>

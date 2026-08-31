@@ -1,0 +1,82 @@
+<Page
+    x:Class="Cortex.UI.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer Padding="24">
+        <StackPanel Spacing="20" MaxWidth="720" HorizontalAlignment="Left">
+
+            <!-- ===================== Appearance ===================== -->
+            <TextBlock x:Uid="Settings_Appearance" Style="{StaticResource TitleTextBlockStyle}"/>
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Settings_Theme"/>
+                <ComboBox x:Name="ThemeComboBox" SelectionChanged="OnThemeChanged" MinWidth="260">
+                    <ComboBoxItem x:Uid="Settings_Theme_WindowsDefault" Tag="WindowsDefault"/>
+                    <ComboBoxItem x:Uid="Settings_Theme_Light" Tag="Light"/>
+                    <ComboBoxItem x:Uid="Settings_Theme_Dark" Tag="Dark"/>
+                    <ComboBoxItem x:Uid="Settings_Theme_Red" Tag="RedAccent"/>
+                    <ComboBoxItem x:Uid="Settings_Theme_Blue" Tag="BlueAccent"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Settings_Language"/>
+                <ComboBox x:Name="LanguageComboBox" SelectionChanged="OnLanguageChanged" MinWidth="260">
+                    <ComboBoxItem Content="English" Tag="English"/>
+                    <ComboBoxItem Content="فارسی" Tag="Persian"/>
+                    <ComboBoxItem Content="中文" Tag="Chinese"/>
+                </ComboBox>
+                <InfoBar x:Uid="Settings_LanguageRestartNote" IsOpen="True" Severity="Informational"/>
+            </StackPanel>
+
+            <!-- ===================== AI ===================== -->
+            <TextBlock x:Uid="Settings_AI" Style="{StaticResource TitleTextBlockStyle}"/>
+            <ToggleSwitch x:Name="CloudAiToggle" x:Uid="Settings_EnableCloudAi" Toggled="OnCloudAiToggled"/>
+            <PasswordBox x:Name="CloudApiKeyBox" x:Uid="Settings_CloudApiKey" MaxWidth="360"/>
+            <Button x:Uid="Settings_SaveApiKey" Click="OnSaveApiKey"/>
+
+            <!-- ===================== Scheduled Indexing / Working Hours ===================== -->
+            <TextBlock x:Uid="Settings_Schedule" Style="{StaticResource TitleTextBlockStyle}"/>
+            <ToggleSwitch x:Name="ScheduleEnabledToggle" x:Uid="Settings_ScheduleEnabled" Toggled="OnScheduleSettingChanged"/>
+
+            <Grid ColumnSpacing="16" RowSpacing="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" x:Uid="Settings_WindowStart" VerticalAlignment="Center"/>
+                <TimePicker Grid.Row="0" Grid.Column="1" x:Name="WindowStartPicker" TimeChanged="OnScheduleSettingChanged"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" x:Uid="Settings_WindowEnd" VerticalAlignment="Center"/>
+                <TimePicker Grid.Row="1" Grid.Column="1" x:Name="WindowEndPicker" TimeChanged="OnScheduleSettingChanged"/>
+            </Grid>
+
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Settings_IntervalMinutes"/>
+                <NumberBox x:Name="IntervalMinutesBox" Minimum="5" Maximum="1440" SpinButtonPlacementMode="Inline"
+                           ValueChanged="OnScheduleSettingChanged" Value="60" MinWidth="160"/>
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+                <TextBlock x:Uid="Settings_ActiveDays"/>
+                <StackPanel Orientation="Horizontal" Spacing="8" x:Name="ActiveDaysPanel">
+                    <CheckBox x:Uid="Settings_Day_Mon" Tag="Monday" Checked="OnScheduleSettingChanged" Unchecked="OnScheduleSettingChanged" IsChecked="True"/>
+                    <CheckBox x:Uid="Settings_Day_Tue" Tag="Tuesday" Checked="OnScheduleSettingChanged" Unchecked="OnScheduleSettingChanged" IsChecked="True"/>
+                    <CheckBox x:Uid="Settings_Day_Wed" Tag="Wednesday" Checked="OnScheduleSettingChanged" Unchecked="OnScheduleSettingChanged" IsChecked="True"/>
+                    <CheckBox x:Uid="Settings_Day_Thu" Tag="Thursday" Checked="OnScheduleSettingChanged" Unchecked="OnScheduleSettingChanged" IsChecked="True"/>
+                    <CheckBox x:Uid="Settings_Day_Fri" Tag="Friday" Checked="OnScheduleSettingChanged" Unchecked="OnScheduleSettingChanged" IsChecked="True"/>
+                    <CheckBox x:Uid="Settings_Day_Sat" Tag="Saturday" Checked="OnScheduleSettingChanged" Unchecked="OnScheduleSettingChanged"/>
+                    <CheckBox x:Uid="Settings_Day_Sun" Tag="Sunday" Checked="OnScheduleSettingChanged" Unchecked="OnScheduleSettingChanged"/>
+                </StackPanel>
+            </StackPanel>
+
+            <InfoBar x:Name="NextRunInfoBar" IsOpen="True" Severity="Informational"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</Page>
