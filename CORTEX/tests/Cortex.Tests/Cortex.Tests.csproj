@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Cortex.Tests</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Cortex.Core\Cortex.Core.csproj" />
+    <ProjectReference Include="..\..\src\Cortex.Graph\Cortex.Graph.csproj" />
+    <ProjectReference Include="..\..\src\Cortex.Rules\Cortex.Rules.csproj" />
+    <ProjectReference Include="..\..\src\Cortex.Impact\Cortex.Impact.csproj" />
+    <ProjectReference Include="..\..\src\Cortex.Metrics\Cortex.Metrics.csproj" />
+    <ProjectReference Include="..\..\src\Cortex.Indexing\Cortex.Indexing.csproj" />
+    <ProjectReference Include="..\..\src\Cortex.Search\Cortex.Search.csproj" />
+    <ProjectReference Include="..\..\src\Cortex.Infrastructure\Cortex.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

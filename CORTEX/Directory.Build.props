@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework Condition="'$(MSBuildProjectName)' != 'Cortex.UI'">net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <Authors>CORTEX Contributors</Authors>
+    <Product>CORTEX — Intelligent Codebase Observatory</Product>
+    <NeutralLanguage>en</NeutralLanguage>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <WarningsAsErrors>false</WarningsAsErrors>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+  </PropertyGroup>
+</Project>
